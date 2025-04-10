@@ -1,6 +1,6 @@
 package melody;
 
-import org.junit.Assert;
+import org.example.melody.Chord;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;
@@ -24,5 +24,4 @@ public class ChordTest {
         Chord chordF = new Chord("F");
         assertNotNull(chordF);
     }
-
 }
