@@ -3,6 +3,9 @@ package melody;
 import org.example.melody.Chord;
 import org.junit.Test;
 
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class ChordTest {
@@ -24,4 +27,12 @@ public class ChordTest {
         Chord chordF = new Chord("F");
         assertNotNull(chordF);
     }
+
+    @Test
+    public void testChordC() {
+        Chord chord = new Chord("C");
+        List<String> notes = chord.getNotes();
+        assertEquals(List.of("C", "E", "G"), notes);
+    }
+
 }
