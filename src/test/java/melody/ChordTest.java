@@ -5,8 +5,7 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 public class ChordTest {
     @Test
@@ -33,6 +32,11 @@ public class ChordTest {
         Chord chord = new Chord("C");
         List<String> notes = chord.getNotes();
         assertEquals(List.of("C", "E", "G"), notes);
+    }
+
+    @Test
+    public void testUnknownChordThrowsException() {
+        assertThrows(IllegalArgumentException.class, () -> new Chord("X").getNotes());
     }
 
 }
