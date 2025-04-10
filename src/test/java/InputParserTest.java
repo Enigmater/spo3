@@ -1,3 +1,4 @@
+import org.example.InputParser;
 import org.example.melody.Chord;
 import org.junit.Test;
 

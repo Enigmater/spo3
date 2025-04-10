@@ -14,4 +14,8 @@ public class Chord {
             default: throw new IllegalArgumentException("Unknown chord: " + name);
         }
     }
+
+    public String getName() {
+        return name;
+    }
 }
