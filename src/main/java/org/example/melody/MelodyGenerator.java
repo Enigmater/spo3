@@ -1,5 +1,6 @@
 package org.example.melody;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -14,5 +15,13 @@ public class MelodyGenerator {
     public String generateNote(Chord chord) {
         List<String> notes = chord.getNotes();
         return notes.get(random.nextInt(notes.size()));
+    }
+
+    public List<String> generateMelody(List<Chord> chords) {
+        List<String> melody = new ArrayList<>();
+        for (Chord chord : chords) {
+            melody.add(generateNote(chord));
+        }
+        return melody;
     }
 }
