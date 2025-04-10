@@ -1,5 +1,6 @@
 package melody;
 
+import org.example.melody.MelodyGenerator;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;
