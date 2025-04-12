@@ -5,6 +5,10 @@ import java.util.List;
 public class Chord {
     private final String name;
 
+    /**
+     * Конструктор аккорда по имени.
+     * @param name название аккорда (например, "C", "Am")
+     */
     public Chord(String name) {this.name = name;}
 
     public List<String> getNotes() {
