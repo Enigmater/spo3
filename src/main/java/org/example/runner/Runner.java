@@ -1,5 +1,6 @@
-package org.example;
+package org.example.runner;
 
+import org.example.utils.InputParser;
 import org.example.melody.Chord;
 import org.example.melody.MelodyGenerator;
 

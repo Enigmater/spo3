@@ -1,4 +1,6 @@
-import org.example.InputParser;
+package utils;
+
+import org.example.utils.InputParser;
 import org.example.melody.Chord;
 import org.junit.Test;
 

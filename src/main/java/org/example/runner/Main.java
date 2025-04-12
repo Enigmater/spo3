@@ -1,9 +1,5 @@
-package org.example;
+package org.example.runner;
 
-import org.example.melody.Chord;
-import org.example.melody.MelodyGenerator;
-
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {

@@ -1,4 +1,6 @@
-import org.example.Runner;
+package runner;
+
+import org.example.runner.Runner;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
