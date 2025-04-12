@@ -11,6 +11,7 @@ public class Chord {
         switch (name) {
             case "C": return List.of("C", "E", "G");
             case "Am": return List.of("A", "C", "E");
+            case "F" : return List.of("F", "A", "C");
             default: throw new IllegalArgumentException("Unknown chord: " + name);
         }
     }
