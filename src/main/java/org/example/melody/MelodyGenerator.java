@@ -25,6 +25,11 @@ public class MelodyGenerator {
         return notes.get(random.nextInt(notes.size()));
     }
 
+    /**
+     * Генерирует мелодию по списку аккордов.
+     * @param chords список аккордов
+     * @return список нот, по одной на каждый аккорд
+     */
     public List<String> generateMelody(List<Chord> chords) {
         List<String> melody = new ArrayList<>();
         for (Chord chord : chords) {
