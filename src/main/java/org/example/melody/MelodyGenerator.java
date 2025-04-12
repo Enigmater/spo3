@@ -15,6 +15,11 @@ public class MelodyGenerator {
         this.random = new Random();
     }
 
+    /**
+     * Генерирует одну случайную ноту из указанного аккорда.
+     * @param chord аккорд
+     * @return одна из нот этого аккорда
+     */
     public String generateNote(Chord chord) {
         List<String> notes = chord.getNotes();
         return notes.get(random.nextInt(notes.size()));
