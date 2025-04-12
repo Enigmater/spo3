@@ -15,6 +15,11 @@ public class Runner {
         generator = new MelodyGenerator();
     }
 
+    /**
+     * Запускает генерацию мелодии на основе строки аккордов.
+     * @param input строка аккордов, разделённых пробелами (например: "C G Am")
+     * @return сгенерированная мелодия в виде строки нот, разделённых пробелами
+     */
     public String run(String input) {
         List<Chord> chords = InputParser.parse(input);
         List<String> melody = generator.generateMelody(chords);
