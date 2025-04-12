@@ -12,6 +12,7 @@ public class Chord {
             case "C": return List.of("C", "E", "G");
             case "Am": return List.of("A", "C", "E");
             case "F" : return List.of("F", "A", "C");
+            case "G" : return List.of("G", "B", "D");
             default: throw new IllegalArgumentException("Unknown chord: " + name);
         }
     }
