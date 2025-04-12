@@ -8,6 +8,9 @@ public class MelodyGenerator {
 
     private final Random random;
 
+    /**
+     * Конструктор по умолчанию, инициализирует генератор с произвольным seed.
+     */
     public MelodyGenerator() {
         this.random = new Random();
     }
