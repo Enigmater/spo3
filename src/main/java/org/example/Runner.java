@@ -8,6 +8,9 @@ import java.util.List;
 public class Runner {
     private final MelodyGenerator generator;
 
+    /**
+     * Конструктор по умолчанию, инициализирует генератор мелодий без фиксированного зерна.
+     */
     public Runner() {
         generator = new MelodyGenerator();
     }
