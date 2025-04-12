@@ -25,6 +25,10 @@ public class Chord {
         }
     }
 
+    /**
+     * Возвращает наименование аккорда.
+     * @return имя аккорда.
+     */
     public String getName() {
         return name;
     }
