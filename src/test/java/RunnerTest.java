@@ -1,6 +1,7 @@
 import org.example.Runner;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
 public class RunnerTest {
@@ -9,4 +10,13 @@ public class RunnerTest {
         Runner melodyRunner = new Runner();
         assertNotNull(melodyRunner);
     }
+
+    @Test
+    public void testRunGeneratesExpectedLengthMelody() {
+        Runner melodyRunner = new Runner();
+        String result = melodyRunner.run("C G Am");
+        String[] notes = result.split(" ");
+        assertEquals(3, notes.length);
+    }
+
 }
