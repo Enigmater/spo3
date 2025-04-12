@@ -49,6 +49,13 @@ public class ChordTest {
     }
 
     @Test
+    public void testChordG() {
+        Chord chord = new Chord("G");
+        List<String> notes = chord.getNotes();
+        assertEquals(List.of("G", "B", "D"), notes);
+    }
+
+    @Test
     public void testUnknownChordThrowsException() {
         assertThrows(IllegalArgumentException.class, () -> new Chord("X").getNotes());
     }
