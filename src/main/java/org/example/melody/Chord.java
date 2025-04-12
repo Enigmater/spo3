@@ -11,6 +11,10 @@ public class Chord {
      */
     public Chord(String name) {this.name = name;}
 
+    /**
+     * Возвращает список нот, составляющих аккорд.
+     * @return список нот аккорда
+     */
     public List<String> getNotes() {
         switch (name) {
             case "C": return List.of("C", "E", "G");
