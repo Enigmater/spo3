@@ -1,8 +1,7 @@
 import org.example.Runner;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.*;
 
 public class RunnerTest {
     @Test
@@ -19,4 +18,9 @@ public class RunnerTest {
         assertEquals(3, notes.length);
     }
 
+    @Test
+    public void testRunWithInvalidChordThrowsException() {
+        Runner melodyRunner = new Runner();
+        assertThrows(IllegalArgumentException.class, () -> melodyRunner.run("X Y Z"));
+    }
 }
